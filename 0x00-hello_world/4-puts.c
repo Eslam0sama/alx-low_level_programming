@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc puts_file.c -c > out
+gcc -c puts_file.c > out
