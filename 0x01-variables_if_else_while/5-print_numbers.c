@@ -9,15 +9,11 @@
  */
 int main(void)
 {
-	int ch;
+	int x;
 
-	for (ch = 'a' ; ch <= 'z' ; ch++)
+	for (x = 0 ; x <= 9 ; ch++)
 	{
-		if (ch == 'e' || ch == 'q')
-		{
-			continue;
-		}
-		putchar(ch);
+		putchar(x);
 	}
 
 	printf("\n");
