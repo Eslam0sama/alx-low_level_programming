@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Describtion: A program that prints a>z except e&q
+ * Describtion: A program that prints numbers with base10
  *
  * Return: Always 0 (Success)
  */
