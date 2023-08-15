@@ -23,6 +23,7 @@ int main(void)
 				if (n1 == 56 && n2 == 57)
 				{
 					break;
+					putchar(10);
 				}
 				putchar(44);
 				putchar(32);
