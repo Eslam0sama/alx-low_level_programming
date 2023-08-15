@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (n2 = 49; n2 <= 57; n2++)
 		{
-			if (n1 != n2)
+			if (n1 != n2 && n1 < n2)
 			{
 				putchar(n1);
 				putchar(n2);
@@ -26,5 +26,5 @@ int main(void)
 
 		}
 	}
-	return 0;
+	return (0);
 }
