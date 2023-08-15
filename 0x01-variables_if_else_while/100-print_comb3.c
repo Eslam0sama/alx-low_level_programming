@@ -22,8 +22,8 @@ int main(void)
 				putchar(n2);
 				if (n1 == 56 && n2 == 57)
 				{
-					break;
 					putchar(10);
+					break;
 				}
 				putchar(44);
 				putchar(32);
