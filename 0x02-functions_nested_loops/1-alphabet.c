@@ -8,9 +8,10 @@
  *
  * Return: Always 0 (Success)
  */
+
 void print_alphabet(void)
 {
-	for (char ch = 'a'; ch <= 'z'; ch++)
+	for (char ch = 97; ch <=122 ; ch++)
 	{
 		_putchar(ch);
 	}
