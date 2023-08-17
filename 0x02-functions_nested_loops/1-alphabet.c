@@ -2,11 +2,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - A program that prints alphabets in lower case
  *
- * Describtion: A program that prints alphabets in lower case
- *
- * Return: Always 0 (Success)
+ * Return: void
  */
 
 void print_alphabet(void)
@@ -17,6 +15,6 @@ void print_alphabet(void)
 	for (ch = 97; ch <= 122 ; ch++)
 	{
 		_putchar(ch);
-		_putchar(10);
 	}
+	_putchar(10);
 }
