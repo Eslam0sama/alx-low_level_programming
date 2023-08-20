@@ -7,7 +7,7 @@
  *
  * Return: Always 0 (Success)
  */
-void main(void)
+int main()
 {
 	int i;
 
