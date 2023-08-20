@@ -36,4 +36,5 @@ int main()
 
 	}
 	putchar(10);
+	return 0;
 }
