@@ -4,9 +4,9 @@
 /**
  * swap_int - A program that swap two values
  *
- * @a: pointer
+ * @a: is a variable
  *
- * @b: another pointer
+ * @b: another variable
  */
 
 void swap_int(int *a, int *b)
