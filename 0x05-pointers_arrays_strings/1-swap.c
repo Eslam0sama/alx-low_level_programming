@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * swap_int - A program reset a value to 98
+ * swap_int - A program that swap two values
  *
  * @a: pointer
  *
