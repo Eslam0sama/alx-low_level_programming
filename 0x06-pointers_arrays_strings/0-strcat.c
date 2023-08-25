@@ -4,9 +4,11 @@
 /**
  * _strcat - A program that appends string to another
  *
- * @*dest: is a pointer to a string
+ * @dest: is a pointer to a string
  *
- * @*src: is a pointer to the appending string
+ * @src: is a pointer to the appending string
+ *
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
