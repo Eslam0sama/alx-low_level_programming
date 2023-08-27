@@ -28,7 +28,8 @@ char *_strncat(char *dest, char *src, int n)
 		dest[i] = src[j];
 		i++;
 		j++;
-		if (n == (j + 1))
+		if (n == j)
+			j--;
 			break;
 	}
 	return (dest);
