@@ -32,5 +32,5 @@ int *_strcmp(char *s1, char *s2)
 		else
 			result = 0;
 	}
-	return (result)i;
-}i
+	return (result);
+}
