@@ -20,13 +20,13 @@ char *_strcmp(char *s1, char *s2)
 	{
 		if (s1[i] < s2[i])
 		{
-			result = -1;
+			result = -15;
 			break;
 		}
 
 		if (s1[i] > s2[i])
 		{
-			result = 1;
+			result = 15;
 			break;
 		}
 		else
