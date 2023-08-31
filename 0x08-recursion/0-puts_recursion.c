@@ -19,4 +19,6 @@ void _puts_recursion(char *s)
 		return;
 	if (*s == '\0')
 		_putchar(10);
+	if (*s == "")
+		_putchar(10);
 }
