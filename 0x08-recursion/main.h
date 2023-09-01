@@ -25,4 +25,6 @@ char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
 void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
+
 #endif
