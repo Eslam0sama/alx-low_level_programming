@@ -12,5 +12,9 @@
 */
 int main(int argc, char *argv[])
 {
-	puts(argv[0]);
+	while (*argv[0] != '\0')
+	{
+		_putchar(*argv[0];
+		*argv[0]++;
+	}
 }
