@@ -13,6 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-	_putchar(argc);
+	(void)argv;
+	printf("%i\n", argc);
+
 	return 0;
 }
