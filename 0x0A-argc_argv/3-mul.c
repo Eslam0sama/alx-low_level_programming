@@ -14,9 +14,10 @@
 int main(int argc, char *argv[])
 {
 	(void)argc;
-	
- 	int i;
-        i = argv[1] * argv[2];
-	printf("%i\n", i);
+	int x = argv[1];
+	int y = argv[2];
+ 	int result;
+        result = x * y;
+	printf("%d\n", result);
 	return (0);
 }
