@@ -13,11 +13,18 @@
 
 int main(int argc, char *argv[])
 {
-	(void)argc;
 	int x = argv[1];
 	int y = argv[2];
  	int result;
         result = x * y;
+	if (argc == 3)
+	{	
 	printf("%d\n", result);
+	}
+	else 
+	{
+		printf("Error");
+		return (1);
+	}
 	return (0);
 }
