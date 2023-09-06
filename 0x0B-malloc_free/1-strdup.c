@@ -6,7 +6,7 @@
 /**
  * _strdup - A function that counts string chars
  *
- * @s: is a pointer to the a string
+ * @str: is a pointer to the a string
 */
 char* _strdup(char *str)
 {
