@@ -21,7 +21,7 @@ char* _strdup(char *str)
 	if (x == NULL)
 		return NULL;
 	
-	for (i = 0; i < (strlen(str) + 1); i++)
+	for (i = 0; i < (int)(strlen(str) + 1); i++)
 	{
 		x[i] = str[i];
 	}
