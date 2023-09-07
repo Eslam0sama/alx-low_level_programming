@@ -19,10 +19,9 @@ char* str_concat(char* s1, char* s2) {
     if (s2 == NULL)
         s2 = "";
 
-	size_t s1_length, s2_length, total_length;
-	s1_length = strlen(s1);
-	s2_length = strlen(s2);
-	total_length = s1_length + s2_length;
+	size_t s1_length = strlen(s1);
+	size_t s2_length = strlen(s2);
+	size_t total_length = s1_length + s2_length;
 
     char* result = malloc(total_length + 1);
     if (result == NULL)
