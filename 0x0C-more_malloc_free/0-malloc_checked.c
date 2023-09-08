@@ -4,11 +4,11 @@
 #include <string.h>
 
 /**
- * _strdup - A function that duplicates a string
+ * malloc_checked - A function that duplicates a string
  *
- * @str: is a pointer to the a string
+ * @ptr: is a pointer to a memory
  *
- * Return: x
+ * Return: ptr
 */
 void *malloc_checked(unsigned int b)
 {
