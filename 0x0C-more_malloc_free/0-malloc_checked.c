@@ -6,7 +6,7 @@
 /**
  * malloc_checked - A function that duplicates a string
  *
- * @ptr: is a pointer to a memory
+ * @b: is a pointer to a memory
  *
  * Return: ptr
 */
