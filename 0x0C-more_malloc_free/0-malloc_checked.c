@@ -4,12 +4,13 @@
 #include <string.h>
 
 /**
- * malloc_checked - A function that duplicates a string
- *
- * @b: is a pointer to a memory
- *
- * Return: ptr
+* malloc_checked - A function that duplicates a string
+*
+* @b: is a pointer to a memory
+*
+* Return: ptr
 */
+
 void *malloc_checked(unsigned int b)
 {
 	void *ptr = malloc(b);
