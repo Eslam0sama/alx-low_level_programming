@@ -4,19 +4,30 @@
 #include <string.h>
 
 /**
- * malloc_checked - A function that duplicates a string
+ * string_nconcat - A function that duplicates a string
  *
  * @ptr: is a pointer to a memory
  *
  * Return: ptr
 */
-void *malloc_checked(unsigned int b)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	void *ptr = malloc(b);
+	int i, j;
+
+	char *ptr = (char*)malloc(strlen(s1)+n+1);
+
 	if (ptr == NULL)
+	return NULL;
+
+	for (i=0; i < strlen(s1); i++)
 	{
-		exit(98);
+		ptr[i] = s1[i];
 	}
+	for (j=0; j < n; j++, i++)
+	{
+		ptr[i] = s2[j];
+	}
+	ptr[i] = '\0';
+
 	return ptr;
-	free(ptr);
 }
