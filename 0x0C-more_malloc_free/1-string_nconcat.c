@@ -10,24 +10,26 @@
  *
  * Return: ptr
 */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
+
 {
 	int i, j;
 
-	char *ptr = (char*)malloc(strlen(s1)+n+1);
+	char *ptr = (char*)malloc(strlen(s1) + n + 1);
 
 	if (ptr == NULL)
-	return NULL;
+	return (NULL);
 
-	for (i=0; i < strlen(s1); i++)
+	for (i = 0; i < strlen(s1); i++)
 	{
 		ptr[i] = s1[i];
 	}
-	for (j=0; j < n; j++, i++)
+	for (j = 0; j < n; j++, i++)
 	{
 		ptr[i] = s2[j];
 	}
 	ptr[i] = '\0';
 
-	return ptr;
+	return (ptr);
 }
