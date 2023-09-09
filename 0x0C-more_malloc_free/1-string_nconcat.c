@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 	}
 
-	if (n >= (strlen(s2)+1))
+	if (n >= (s2))
 	{
 		n = strlen(s2); 
 	}
