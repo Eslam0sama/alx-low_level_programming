@@ -6,7 +6,11 @@
 /**
  * string_nconcat - A function that duplicates a string
  *
- * @ptr: is a pointer to a memory
+ * @s1: first string
+ *
+ * @s2: appending string
+ *
+ * @n: number of chars to be appended
  *
  * Return: ptr
 */
@@ -19,9 +23,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 
 	if (s1 == NULL)
-        s1 = "";
-    	if (s2 == NULL)
-        s2 = "";
+	s1 = "";
+	if (s2 == NULL)
+	s2 = "";
 
 	length_s1 = strlen(s1);
 	length_s2 = strlen(s2);
