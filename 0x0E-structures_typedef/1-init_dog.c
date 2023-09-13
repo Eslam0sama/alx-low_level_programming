@@ -2,10 +2,10 @@
  
 /**
  * init_dog - intializes a dog
- * @d:
- * @name:
- * @age:
- * @owner:
+ * @d: the dog to init
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: owner's name
  *
  * Return: void
  */
