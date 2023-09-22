@@ -18,5 +18,6 @@ void print_dog(struct dog *d)
 		d->age = age;
 		d->owner = owner;
 	}
+	if 
 	printf("Name: %s\nAge: %lf\nOwner: %s", d->name, d->age, d->owner);
 }
