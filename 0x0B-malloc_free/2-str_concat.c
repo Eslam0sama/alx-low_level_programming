@@ -1,36 +1,47 @@
-#include <ctype.h>
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
 
 /**
- * _strdup - A function that duplicates a string
+ * str_concat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
  *
- * @str: is a pointer to the a string
- *
- * Return: x
-*/
-#include <stdlib.h>
-#include <string.h>
+ * Return: a pointer to a newly allocated space in memory which
+ * contains the contents of s1, followed by the contents of s2,
+ * and null terminated. NULL on failure
+ */
+char *str_concat(char *s1, char *s2)
+{
+	int i, j, len1, len2, len;
+	char *result;
 
-char* str_concat(char* s1, char* s2) {
-size_t s1_length, s2_length, total_length;
+	len1 = len2 = 0;
 
-    if (s1 == NULL)
-        s1 = "";
-    if (s2 == NULL)
-        s2 = "";
+	if (s1 != NULL)
+	{
+		i = 0;
+		while (s1[i++] != '\0')
+			len1++;
+	}
 
-	s1_length = strlen(s1);
-	s2_length = strlen(s2);
-	total_length = s1_length + s2_length;
+	if (s2 != NULL)
+	{
+		i = 0;
+		while (s2[i++] != '\0')
+			len2++;
+	}
 
-    char* result = malloc(total_length + 1);
-    if (result == NULL)
-        return NULL;
+	len = len1 + len2;
+	result = (char *)malloc(sizeof(char) * (len + 1));
+	if (result == NULL)
+		return (NULL);
 
-    strcpy(result, s1);
-    strcat(result, s2);
+	for (i = 0; i < len1; i++)
+		result[i] = s1[i];
+	for (j = 0; j < len2; j++, i++)
+		result[i] = s2[j];
+	result[len] = '\0';
 
-    return result;
+	return (result);
 }
