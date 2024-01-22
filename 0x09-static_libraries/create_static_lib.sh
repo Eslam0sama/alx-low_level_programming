@@ -1,4 +1,5 @@
 #!/bin/bash
-
-gcc -c ./*.c  && ar rcs liball.a ./*.o
+gcc -Wall -pedantic -Werror -Wextra -c *.c
+gcc -c ./*.c
+ar rcs liball.a ./*.o
 
