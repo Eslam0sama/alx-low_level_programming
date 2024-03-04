@@ -6,9 +6,9 @@
  * @n: The number to check.
  *
  * Return:
- * - 0 if @n is zero.
- * - 1 if @n is positive.
- * - -1 if @n is negative.
+ * 0 if @n is zero.
+ * 1 if @n is positive.
+ * -1 if @n is negative.
  */
 
 int print_sign(int n)
