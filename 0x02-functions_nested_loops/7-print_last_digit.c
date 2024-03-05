@@ -11,8 +11,11 @@
 int print_last_digit(int i)
 {
     int last_digit;
-
-	i = i * -1;
+    
+    if (i < 0)
+    {
+        i = i * -1;
+    }
 	last_digit = i % 10;
 	printf("%d", last_digit);
 	return (last_digit);
