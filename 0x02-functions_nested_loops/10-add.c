@@ -7,7 +7,7 @@
  *
  * @y: The second integer
  *
- * Returns: return the sum of the two integers
+ * Return: The sum of the two integers
  */
 
 int add(int x, int y)
