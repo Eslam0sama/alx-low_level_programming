@@ -25,9 +25,6 @@ void times_table(void)
 				printf("%2d, ", i * j);
 			}
 		}
-
-		if (i == 9)
-			break;
 		printf("\n");
 	}
 }
