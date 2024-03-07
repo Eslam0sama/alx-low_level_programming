@@ -6,6 +6,8 @@
  * @x: The first integer
  *
  * @y: The second integer
+ *
+ * Returns: return the sum of the two integers
  */
 
 int add(int x, int y)
