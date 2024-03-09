@@ -10,13 +10,13 @@ void print_triangle(int size)
 {
 	int row, spaces, hashes;
 
-	if (size == 0 || size < 0)
-	{
-		_putchar('\n');
-		break;
-	}
 	for (row = 0; row < size; row++)
 	{
+		if (size == 0 || size < 0)
+		{
+			_putchar('\n');
+			break;
+		}
 		for (spaces = row; spaces < size - 1; spaces++)
 		{
 			_putchar(' ');
