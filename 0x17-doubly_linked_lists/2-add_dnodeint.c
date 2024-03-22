@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * add_dnodeint - A function that add a node at the beginning
  *
