@@ -2,8 +2,10 @@
 
 /**
  * get_dnodeint_at_index - A function to get a node with a specific index
+ *
  * @head: The head of the list
  * @index: The index of the needed node
+ *
  * Return: The node at a specific index
  */
 
