@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
  * sum_dlistint - A function to sum all numbers in a dlist
  *
@@ -13,6 +15,11 @@ int sum_dlistint(dlistint_t *head)
 	int sum = 0;
 
 	current = head;
+	
+	if (head == NULL)
+	{
+		return (NULL);
+	}
 
 	while (current)
 	{
