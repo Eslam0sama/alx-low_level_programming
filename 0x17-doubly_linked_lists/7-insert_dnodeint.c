@@ -8,7 +8,6 @@
  *
  * Return: The address of the new node
  */
-
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *temp, *current, *node;
@@ -20,16 +19,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	node->prev = NULL;
 	node->next = NULL;
 	node->n = n;
-	while (current != NULL)
-	{
-		if (idx == 0)
+	if (idx == 0 || current == NULL)
 		{
 			current->prev = node;
 			node->next = current;
 			*h = node;
 			return (node);
 		}
-		else if (idx == index)
+	while (current != NULL)
+	{
+		if (idx == index && idx != 0)
 		{
 			node->next = current;
 			current->prev = node;
@@ -41,7 +40,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current = current->next;
 		index++;
 	}
-	if (current == NULL && index == idx)
+	if	(current == NULL && index == idx)
 		{
 			temp->next = node;
 			node->prev = temp;
